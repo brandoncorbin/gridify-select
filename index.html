@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Selector</title>
+			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/css/bootstrap.min.css">
+			<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/bootstrap.min.js"></script>
+			<script type="text/javascript" src="jq.gridify_select.js"></script>
+	</head>
+	<body style="padding:20px;">
+		
+		
+
+		<select name="" class="dropgrid">
+			<option value="0">Name 	Age	Gender</option>
+			<option value="1">Brandon	37	Male</option>
+			<option value="1">Frank	18	Male</option>
+			<option value="1">Lisa	22	Female</option>
+			<option value="1">Bobo	47	Dog</option>
+		</select>
+		
+	<script>
+
+		$(function(){
+			$('select.dropgrid').gridify_select();
+		});
+
+	</script>
+
+	</body>
+
+</html>
