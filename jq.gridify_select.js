@@ -30,15 +30,16 @@ $.fn.gridify_select = function() {
 
        }); // End loop over options
        
-       $('.dropdown-menu .table-container', button).append(table);
+       $('.dropdown-menu .table-container', button).append(table); // Add table to dropdown
+       
+       // Setup reverse setting if they change the select with javascript or clicking
        select.on('change', function() { 
-       		var index = select.prop("selectedIndex");
     		$('tr', table).removeClass('info');
     		$('tr',table).eq(index).addClass('info');
-    		$('span.title', button).html($('option', select).eq(index).html());
+    		$('span.title', button).html($('option', select).eq(select.prop("selectedIndex")).html());
        });
 
-       select.after(button).hide();
+       select.after(button).hide(); // Add button after the select
 
     });
  
